@@ -1,0 +1,74 @@
+/*
+ * Shards v1.0.0 (https://designrevision.com/product/shards)
+ * Based on: Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2017-* DesignRevision (https://designrevision.com)
+ * Copyright 2017-* Catalin Vasile (http://catalin.me)
+ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600|Roboto+Mono");
+@media (max-width: 575px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+.dj-fixed-outer{
+  overflow: scroll;
+  right: 0;
+}
+
+#dj-blog-side {
+  position: fixed;
+}
+
+.dj-avatar-div {
+  alignment: center;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  background: #000000;
+  border-radius: 120px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+}
+
+.dj-avatar-img {
+  width: 120px;
+  height: 120px;
+  line-height: 0;
+  display: inline-block;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: linear 0.25s;
+}
+
+.dj-side {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background: url("../images/side_back.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.widget { margin-bottom:65px;}
+.widget input { border-radius: 4px; width: 85%; border-width: 2px; margin-bottom: 0; padding: 10px 35px 10px 15px }
+.widget .close-search { right: 70px; top: 16px}
+.widget-title { font-size: 12px; font-family: 'Open Sans', sans-serif; font-weight:600; letter-spacing: 2px;}
+.category-list li { padding: 5px 0}
+.category-list li:first-child { padding: 0 0 5px 0}
+.category-list li a { color: #626262; }
+.category-list li a:hover { color:#000}
+.category-list li a span { color:#a8a8a8}
+.category-list li a span:before { content: "/"; margin-right: 4px; padding-left: 10px;}
+.widget-posts li { padding:10px 0;}
+.widget-posts li a { display:block; line-height: 20px}
+.widget-posts li img { width: 75px; margin-right: 20px; float: left}
+.widget-posts-details { position: relative; overflow: hidden; top:-4px; font-size: 11px; line-height: 14px;}
+.widget-posts-details a { font-size: 13px; margin-bottom: 8px; line-height: 16px !important;}
+.tags a { border:1px solid rgba(0, 0, 0, 0.1); padding: 0 10px; margin: 0 5px 9px 0; text-transform: uppercase; font-size: 10px; color: #626262; display: inline-block; line-height: 26px; }
+.tags a:hover {border:1px solid rgba(0, 0, 0, 1); background-color: #000; color: #fff}
+.quick-contact input { width:100%; border-width:1px; margin:0 0 20px; border-radius:0}
+.quick-contact input[type="button"] { border: 2px solid #000; width:auto; border-radius:0}
+.flickr-photostream img { width: 45%; margin:0 5% 5% 0; padding: 0}

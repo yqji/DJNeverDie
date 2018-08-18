@@ -1,0 +1,47 @@
+{#{% extends "base.html" %}#}
+{#{% block content %}#}
+{#    TOTAL: {{ article_num }}#}
+{#    {% for article in articles %}#}
+{#        <p>#}
+{#            {{ article.title }}#}
+{#            {{ article.author }}#}
+{#            {{ article.abstract }}#}
+{#            {{ article.cover }}#}
+{#            {{ article.tags }}#}
+{#            {{ article.content }}#}
+{#            {{ article.views }}#}
+{#            {{ article.comments }}#}
+{#            {{ article.tags.name }}#}
+{#        </p>#}
+{#    {% endfor %}#}
+{#{% endblock %}#}
+
+{% extends "base.html" %}
+{% block content %}
+<div id="blog" class="blog section section-invert">
+<h3 class="section-title text-center m-5">Posts | {{ article_num }}</h3>
+<div class="container">
+  <div class="py-4">
+    <div class="row">
+      <div class="card-deck">
+        {% for article in articles %}
+        <div class="col-md-12 col-lg-12 col-sm-12">
+          <div class="card mb-4">
+            <img class="card-img-top" src="/static/images/code-1.jpg" alt="{{ article.title }}">
+            <div class="card-body">
+              <h4 class="card-title">{{ article.title }} | {{ article.update_ts }}</h4>
+              <p class="card-text">{{ article.abstract|linebreaksbr }}</p>
+              <a class="btn btn-outline-success btn-pill" href="posts/list/{{ article.title }}">
+                  Details
+                  <i class="fa fa-chevron-circle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

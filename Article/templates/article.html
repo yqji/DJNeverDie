@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    TOTAL COMMENT: {{ comment_num }}
+    {{ article.title }}
+    {{ article.author }}
+    {{ article.abstract }}
+    {{ article.cover }}
+    {{ article.tags }}
+    {{ article.content }}
+    {{ article.views }}
+    {{ article.comments }}
+    {{ article.tags.name }}
+    COMMENTS:
+    {% for comment in comments %}
+        {{ comment.owner }}
+        {{ comment.content }}
+        {{ comment.to_comment_id }}
+    {% endfor %}
+{% endblock %}

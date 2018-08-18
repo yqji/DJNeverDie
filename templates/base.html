@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DJNeverDie</title>
+        <meta name="description" content="David's Personal Website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS Dependencies -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/shards.min.css">
+        <link rel="stylesheet" href="/static/css/shards-extras.css">
+        <link rel="stylesheet" href="/static/css/djnd_custom.css">
+    </head>
+
+    <body class="shards-app-promo-page--1 no-gutters">
+      <div class="row no-gutters col-lg-12 col-md-12 col-sm-12 dj-fixed-outer">
+        <!-- Welcome Section -->
+        <div id="dj-blog-side" class="welcome col-lg-4 col-md-12 col-sm-12">
+          <section name="header">
+            <div class="container">
+              <!-- Navigation -->
+              <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-4">
+                <a class="navbar-brand mr-5" href="/">
+                  <img src="/static/images/app-promo/shards-logo-green.svg" class="mr-2" alt="David Landing Page">
+                  David Ji
+                </a>
+              </nav>
+              <!-- / Navigation -->
+            </div>
+          </section> <!-- .container -->
+
+
+          <!-- Inner Wrapper -->
+
+          <div class="inner-wrapper mt-auto mb-auto container">
+            <section name="intro">
+              <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-0 mb-0 mr-0">
+                  <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto dj-avatar-div">
+                    <img src="/static/images/avatar.jpg" class="w-100 dj-avatar-img" alt="DaviNerd">
+                  </div>
+                  <h4 class="display-6 text-white text-center">David's Blog</h4>
+                  <p class="text-muted text-center">kind of bullshit.</p>
+                </div>
+              </div>
+            </section>
+
+            <section name="categories">
+              <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-20 mb-0 mr-0">
+                  <ul class="list-group">
+                    <h5 class="text-muted">Channels</h5>
+                    <li class="list-group-item"><a href="/posts/list/Football" class="text-muted"><i class="fa fa-futbol-o" aria-hidden="true"></i> football</a></li>
+                    <li class="list-group-item"><a href="/posts/list/Code" class="text-muted"><i class="fa fa-code" aria-hidden="true"></i> code</a></li>
+                    <li class="list-group-item"><a href="/posts/list/Life" class="text-muted"><i class="fa fa-beer" aria-hidden="true"></i> life</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section name="footer">
+              <footer>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container">
+                    <a class="navbar-brand" href="#">David Ji</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Back to top <span class="sr-only">(current)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </footer>
+            </section>
+          </div>
+          <!-- / Inner Wrapper -->
+        </div>
+
+        <div class="col-lg-8 col-md-12 col-sm-12" style="right: 0;">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <!-- / Welcome Section -->
+      </div>
+
+      <!-- Footer Section -->
+
+      <!-- / Footer Section -->
+
+      <!-- JavaScript Dependencies -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
+</html>
